@@ -1,0 +1,40 @@
+.main {
+  section {
+    height: 100vh;
+    overflow: hidden;
+    text-align: center;
+  }
+}
+
+.technologies {
+  &__title {
+    font-family: $header-font;
+    font-size: 30px;
+    margin: 35px 0;
+  }
+
+  &__ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 0 300px;
+  }
+
+  &__li {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px;
+    flex-basis: 12%;
+    height: 120px;
+    box-shadow: 0.4rem 0.4rem 0.4rem rgba(46, 41, 78, .15);
+    border-radius: 10%;
+    margin-bottom: 20px;
+  }
+
+  &__icon {
+    width: 65px;
+  }
+}
