@@ -1,0 +1,105 @@
+.header {
+  background-color: $main-color;
+  height: 100vh;
+  position: relative;
+
+  #particle-js {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+  }
+
+  &__wrapper {
+    color: white;
+    font-family: $header-font;
+    position: absolute;
+    left: 10%;
+    top: 30%;
+  }
+
+  &__title {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 52px;
+  }
+
+  &__second-title {
+    font-size: 30px;
+  }
+
+  &__socials {
+    margin-top: 40px;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 0 150px;
+  }
+
+  .fab {
+    color: white;
+    font-size: 55px;
+  }
+
+
+  &__arrow {
+    color: white;
+    font-size: 50px;
+    position: absolute;
+    left: 50%;
+    bottom: 5%;
+    transform: translate(-50%, 0);
+    animation: arrow infinite 0.5s linear alternate;
+  }
+
+}
+
+@keyframes arrow {
+  from {
+    transform: translate(-50%, 0);
+  }
+
+  to {
+    transform: translate(-50%, -20%)
+  }
+}
+
+@media (max-width: 524px) {
+  .header {
+    height: 100vh;
+
+    #particle-js {
+      height: 100vh !important;
+    }
+
+    .particles-js-canvas-el {
+      height: 100vh !important;
+    }
+
+    &__wrapper {
+      text-align: center;
+      width: 100%;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    &__title {
+      font-size: 26px;
+    }
+
+    &__second-title {
+      font-size: 18px;
+    }
+
+    &__socials {
+      margin-top: 20px;
+      padding: 0 100px;
+    }
+
+    .fab {
+      font-size: 30px;
+    }
+
+  }
+
+}
