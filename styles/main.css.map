@@ -1,0 +1,14 @@
+{
+    "version": 3,
+    "mappings": "AEAA,AAAA,IAAI,AAAC,CACH,WAAW,CDGD,QAAQ,CACpB,YAAY,CCHX",
+    "sources": [
+        "scss/main.scss",
+        "scss/abstracts/_variables.scss",
+        "scss/_root.scss",
+        "scss/partials/_header.scss",
+        "scss/partials/_main.scss",
+        "scss/partials/_footer.scss"
+    ],
+    "names": [],
+    "file": "main.css"
+}
