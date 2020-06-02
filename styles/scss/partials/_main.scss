@@ -1,12 +1,13 @@
 .main {
   section {
-    height: 100vh;
     overflow: hidden;
     text-align: center;
   }
 }
 
 .technologies {
+  height: 100vh;
+
   &__title {
     font-family: $header-font;
     font-size: 30px;
@@ -37,4 +38,39 @@
   &__icon {
     width: 65px;
   }
+}
+
+.about {
+  height: 100vh;
+  position: relative;
+
+
+  &__info {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: $main-text-color;
+    box-shadow: 0.4rem 0.4rem 0.4rem rgba(46, 41, 78, .15);
+  }
+
+  &__header {
+    font-size: 30px;
+    margin: 20px;
+    text-transform: uppercase;
+  }
+
+  &__text {
+    line-height: 150%;
+    font-size: 24px;
+  }
+
+  &__sfi {
+    text-decoration: underline;
+    color: $main-text-color;
+  }
+}
+
+.setup {
+  height: 80vh;
 }

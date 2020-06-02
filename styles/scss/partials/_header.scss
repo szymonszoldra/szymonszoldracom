@@ -9,6 +9,10 @@
     width: 100%;
   }
 
+  .particles-js-canvas-el {
+    height: 100vh !important;
+  }
+
   &__wrapper {
     color: white;
     font-family: $header-font;
@@ -50,6 +54,7 @@
     bottom: 5%;
     transform: translate(-50%, 0);
     animation: arrow infinite 0.5s linear alternate;
+    cursor: pointer;
   }
 
 }
