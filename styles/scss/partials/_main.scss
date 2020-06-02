@@ -49,12 +49,13 @@
     position: absolute;
     top: 50%;
     left: 50%;
+    max-width: 40vw;
     transform: translate(-50%, -50%);
     color: $main-text-color;
-    box-shadow: 0.4rem 0.4rem 0.4rem rgba(46, 41, 78, .15);
   }
 
   &__header {
+    font-family: $header-font;
     font-size: 30px;
     margin: 20px;
     text-transform: uppercase;
@@ -63,6 +64,10 @@
   &__text {
     line-height: 150%;
     font-size: 24px;
+    text-align: justify;
+    padding: 10px;
+    box-shadow: 0.4rem 0.4rem 0.4rem rgba(46, 41, 78, .15);
+    border-radius: 3%;
   }
 
   &__sfi {
@@ -73,4 +78,33 @@
 
 .setup {
   height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__photo {
+    width: 800px;
+    margin-left: 100px;
+  }
+
+  &__description {
+    color: $main-text-color;
+  }
+
+  &__header {
+    font-size: 30px;
+    font-family: $header-font;
+    margin: 20px;
+    text-transform: uppercase;
+  }
+
+  ul {
+    list-style-type: none;
+    line-height: 150%;
+    font-size: 24px;
+    text-align: justify;
+    padding: 10px;
+    box-shadow: 0.4rem 0.4rem 0.4rem rgba(46, 41, 78, .15);
+    border-radius: 3%;
+  }
 }
