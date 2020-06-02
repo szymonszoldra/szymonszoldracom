@@ -87,6 +87,10 @@
     margin-left: 100px;
   }
 
+  &__photoMobile {
+    display: none;
+  }
+
   &__description {
     color: $main-text-color;
   }
@@ -106,5 +110,438 @@
     padding: 10px;
     box-shadow: 0.4rem 0.4rem 0.4rem rgba(46, 41, 78, .15);
     border-radius: 3%;
+  }
+}
+
+
+//For my Huawei Matebook X Pro in scaled mode
+@media (max-width: 1600px) and (orientation: landscape) {
+  .technologies {
+    &__ul {
+      margin: 40px;
+    }
+
+    &__li {
+      margin: 8px;
+      flex-basis: 12%;
+      height: 120px;
+      margin-bottom: 40px;
+    }
+
+    &__icon {
+      width: 80px;
+    }
+
+    &__name {
+      font-size: 22px;
+    }
+
+    &__title {
+      font-size: 38px;
+      margin: 30px;
+    }
+  }
+
+  .about {
+    #particle-js2 {
+      height: 100vh !important;
+    }
+
+    .particles-js-canvas-el {
+      height: 100vh !important;
+    }
+
+    &__info {
+      max-width: 70vw;
+    }
+
+
+    &__header {
+      font-size: 36px;
+      margin: 20px;
+    }
+
+    &__text {
+      line-height: 150%;
+      font-size: 28px;
+      text-align: justify;
+      padding: 10px;
+      box-shadow: 0.4rem 0.4rem 0.4rem rgba(46, 41, 78, .15);
+      border-radius: 3%;
+    }
+
+  }
+
+  .setup {
+    &__photo {
+      width: 900px;
+      margin-left: 50px;
+      margin-top: 30px;
+    }
+
+
+    &__header {
+      font-size: 36px;
+      font-family: $header-font;
+      margin: 5px;
+      text-transform: uppercase;
+    }
+
+    ul {
+      margin-left: 20px;
+      line-height: 125%;
+      font-size: 22px;
+    }
+  }
+}
+
+//For iPad Pro in landscape mode
+@media (max-width: 1366px) and (orientation: landscape) {
+  .technologies {
+
+    &__ul {
+      margin: 40px;
+    }
+
+    &__li {
+      margin: 8px;
+      flex-basis: 12%;
+      height: 120px;
+      margin-bottom: 40px;
+    }
+
+    &__icon {
+      width: 80px;
+    }
+
+    &__name {
+      font-size: 22px;
+    }
+
+    &__title {
+      font-size: 38px;
+      margin: 30px;
+    }
+  }
+
+  .about {
+    #particle-js2 {
+      height: 100vh !important;
+    }
+
+    .particles-js-canvas-el {
+      height: 100vh !important;
+    }
+
+    &__info {
+      max-width: 70vw;
+    }
+
+    &__header {
+      font-size: 36px;
+      margin: 20px;
+    }
+
+    &__text {
+      line-height: 150%;
+      font-size: 28px;
+      padding: 10px;
+    }
+
+  }
+
+  .setup {
+    &__photo {
+      width: 800px;
+      margin-left: 80px;
+      margin-top: 30px;
+    }
+
+
+    &__header {
+      font-size: 36px;
+      margin: 5px;
+    }
+
+    ul {
+      line-height: 125%;
+      font-size: 22px;
+    }
+  }
+}
+
+//For iPad Pro in portrait mode
+@media (max-width: 1024px) and (orientation: portrait) {
+  .technologies {
+    &__ul {
+      margin: 30px;
+      margin-bottom: 70px;
+    }
+
+    &__li {
+      margin: 8px;
+      flex-basis: 12%;
+      height: 140px;
+      margin-bottom: 30px;
+    }
+
+    &__icon {
+      width: 80px;
+    }
+
+    &__name {
+      font-size: 22px;
+    }
+
+    &__title {
+      font-size: 52px;
+      margin: 90px;
+    }
+  }
+
+  .about {
+    #particle-js2 {
+      height: 100vh !important;
+    }
+
+    .particles-js-canvas-el {
+      height: 100vh !important;
+    }
+
+    &__info {
+      max-width: 70vw;
+    }
+
+
+    &__header {
+      font-size: 52px;
+      margin: 20px;
+    }
+
+    &__text {
+      line-height: 150%;
+      font-size: 34px;
+      padding: 10px;
+    }
+
+  }
+
+  .setup {
+    height: 90vh;
+    flex-direction: column;
+
+    &__photo {
+      width: 1000px;
+      margin-left: 0;
+      margin-top: 30px;
+    }
+
+
+    &__header {
+      font-size: 52px;
+      margin: 5px;
+    }
+
+    ul {
+      line-height: 125%;
+      font-size: 28px;
+    }
+  }
+}
+
+//For iPad in landscape mode
+@media (max-width: 1024px) and (orientation: landscape) {
+  .technologies {
+    &__ul {
+      margin: 30px;
+    }
+
+    &__li {
+      margin: 8px;
+      flex-basis: 12%;
+      height: 100px;
+    }
+
+    &__icon {
+      width: 50px;
+    }
+  }
+
+  .about {
+    #particle-js2 {
+      height: 100vh !important;
+    }
+
+    .particles-js-canvas-el {
+      height: 100vh !important;
+    }
+
+    &__info {
+      max-width: 60vw;
+    }
+
+  }
+
+  .setup {
+    height: 90vh;
+    flex-direction: column;
+
+    &__photo {
+      width: 750px;
+      margin-left: 0;
+      margin-top: 30px;
+    }
+
+    &__photoMobile {
+      display: none;
+    }
+
+    &__header {
+      font-size: 30px;
+      margin: 5px;
+    }
+
+    ul {
+      line-height: 125%;
+      font-size: 18px;
+    }
+  }
+}
+
+//For iPad in portrait mode
+@media (max-width: 768px) and (orientation: portrait) {
+  .technologies {
+
+    &__ul {
+      margin: 100px 30px;
+    }
+
+    &__li {
+      margin: 8px;
+      flex-basis: 12%;
+      height: 100px;
+    }
+
+    &__icon {
+      width: 50px;
+    }
+  }
+
+  .about {
+    #particle-js2 {
+      height: 100vh !important;
+    }
+
+    .particles-js-canvas-el {
+      height: 100vh !important;
+    }
+
+    &__info {
+      max-width: 60vw;
+    }
+
+  }
+
+  .setup {
+    height: 85vh;
+    flex-direction: column;
+
+    &__photo {
+      width: 750px;
+      margin-left: 0;
+      margin-top: 30px;
+    }
+
+    &__header {
+      font-size: 30px;
+      margin: 20px;
+    }
+
+    ul {
+      line-height: 150%;
+      font-size: 24px;
+      padding: 10px;
+    }
+  }
+}
+
+//For mobile phones
+@media (max-width: 500px) {
+  .technologies {
+    height: 200vh;
+
+    &__title {
+      font-size: 20px;
+      margin: 30px 0;
+    }
+
+    &__ul {
+      margin: 0 50px;
+    }
+
+    &__li {
+      flex-basis: 40%;
+      height: 70px;
+    }
+
+    &__icon {
+      width: 40px;
+    }
+  }
+
+  .about {
+    height: 100vh;
+
+    &__info {
+      width: 70vw;
+      max-width: 70vw;
+    }
+
+    &__header {
+      font-size: 20px;
+      margin: 10px;
+    }
+
+    &__text {
+      line-height: 150%;
+      font-size: 16px;
+      padding: 10px;
+    }
+
+    #particle-js2 {
+      height: 100vh !important;
+    }
+
+    .particles-js-canvas-el {
+      height: 100vh !important;
+    }
+  }
+
+  .setup {
+    flex-direction: column;
+    height: 90vh;
+
+    &__photo {
+      display: none;
+    }
+
+    &__photoMobile {
+      display: block;
+      max-width: 100vw;
+      margin-top: 60px;
+      padding: 0 10px;
+    }
+
+
+    &__header {
+      font-size: 20px;
+      margin: 20px;
+    }
+
+    ul {
+      line-height: 125%;
+      font-size: 16px;
+      padding: 5px;
+    }
   }
 }
